@@ -1,0 +1,32 @@
+.lactoSafe_BodyFooter {
+    border-top-color: #FFFFFF;
+    background-color: #424242;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: scroll;
+    font-size: 12px;
+    color: #d5d5d5;
+
+    .lactoSafeFooter_container {
+        display: flex;
+        flex:0 0 25%;
+        padding: 2rem 15rem;
+        text-align: left;
+        justify-content: space-around;
+        align-items: stretch;  
+
+        .lactoSafeFooter_main_item {           
+            margin: 0 2rem;
+            min-width: min-content;
+            .lactoSafeFooter_list {
+                justify-content: center;
+                min-width: fit-content;
+                li{
+                    padding: 0 !important;
+                    margin: 0 !important;
+                }
+            }
+            
+        }
+    }
+}

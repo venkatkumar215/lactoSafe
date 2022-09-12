@@ -1,0 +1,22 @@
+@import  '../../../styles/index.scss';
+
+.lactoSafe_HeaderListItemBlock{
+    @include lactoSafeHeader-list;
+    display:block;
+    margin-top: 2rem;
+    padding: 5 2rem;
+    min-width: 12rem;
+    text-align: left;
+    align-content: center;
+    cursor: pointer;
+    font-size: 14px;  
+
+}
+
+.lactoSafe_HeaderListItemRow{
+    @include lactoSafeHeader-list;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
