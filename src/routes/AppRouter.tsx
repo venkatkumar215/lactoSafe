@@ -7,7 +7,7 @@ import HistoricalData from "../pages/HistoricalData";
 import Processing from "../pages/Processing";
 import Transporting from "../pages/Transporting";
 import Packaging from "../pages/Packaging";
-import LogIn from "../pages/LogIn/indes";
+import LogIn from "../pages/LogIn";
 import Footer from "../component/Footer";
 import styles from './app.module.scss'
 

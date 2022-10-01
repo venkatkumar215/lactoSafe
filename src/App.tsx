@@ -3,10 +3,12 @@ import {
   ThemeProvider,
   useMediaQuery,
   useTheme,
+  CssBaseline
 } from "@mui/material";
 import AppRouter from "./routes";
 import "./styles/index.scss";
 import { createContext } from "react";
+import materiaUitheme from './styles/themes/index'
 
 interface screenWidthContextInterface {
   mobileScreen: boolean;
@@ -23,7 +25,8 @@ function App() {
     mobileScreen: matches,
   };
   return (
-    <ThemeProvider theme={theme}>
+    <ThemeProvider theme={materiaUitheme}>
+      <CssBaseline />
       <Container maxWidth="xl">
         <div className="app">
           <screenWidthCxt.Provider value={screenWidthContext}>
