@@ -1,0 +1,14 @@
+@import '../../../styles/mixin.scss';
+
+.lactoSafe_SignUpForm{
+    @include signInFormBackground;
+}
+.lactoSafe_SignUp_InputForm_Input{
+    padding-top: 2rem;
+}
+.lactoSafe_SingUp_InputForm{
+    padding-left: 2rem;
+}
+.latco_LogIn_Button{
+    padding: 1rem 0;
+}

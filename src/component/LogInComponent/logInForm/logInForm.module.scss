@@ -1,75 +1,72 @@
+@import '../../../styles//mixin.scss';
+
+
 .lactoSafe_LogInForm {
-    position: absolute;    
-    top: 25%;
-    left: 30%;
-    right: 30%;
-    background-color: rgb(0, 0, 0);
-    /* Fallback color */
-    background-color: rgba(0, 0, 0, 0.4);
-    /* Black w/opacity/see-through */
-    color: white;
-    padding: 4rem;
-
-    .lactoSafe_LogInForm_Icon {
-        display: flex;
-        flex-direction: row;
-        padding: 0rem 2rem;
-        
-
-        p {
-            font-size: 16px;
-            font-weight: 500;
-            text-align: center;
-            justify-content: flex-start;
-            line-height: 32px;
-            padding-right: 2rem;
-            text-align: start;
-        }
-
-        .lactoSafe_LogInForm_Icon__span svg {
-            padding: 0 0.5rem;
-        }
+    
+@include signInFormBackground;
+    
+    
+   
 
 
-    }
-
-    .lactoSafe_LineDivider {
-        display: flex;
-        align-items: center;
-
-        p {
-            font-weight: 700;
-            font-size: 16px;
-
-        }
-    }
-
-    .lactoSafe_LineDivider::before {
-        content: "";
-        flex: 1;
-        height: 1px;
-        background: #e0e0e0;
-        margin: 0 1rem
-    }
-
-
-    .lactoSafe_LineDivider::after {
-        content: "";
-        flex: 1;
-        height: 1px;
-        background: #e0e0e0;
-        margin: 0 1rem;
-    }
-
-    .lactoSafe_InputForm_Input{
-        padding-top: 2rem;
-        padding-bottom: 2rem;
-    }
-
-
+}
+.lactoSafe_InputForm_Input{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 
 .latco_LogIn_Button{
     padding: 1rem 0;
+}
+
+.lactoSafe_LogInForm_Icon {
+    display: flex;
+    flex-direction: row;
+   
+    
+
+    p {
+        font-size: 16px;
+        font-weight: 500;
+        text-align: center;
+        justify-content: flex-start;
+        line-height: 32px;
+        padding-right: 2rem;
+        text-align: start;
+    }
+
+    .lactoSafe_LogInForm_Icon__span svg {
+        padding: 0 0.5rem;
+    }
+
+
+}
+
+.lactoSafe_LineDivider {
+    display: flex;
+    align-items: center;
+
+    p {
+        font-weight: 700;
+        font-size: 16px;
+
+    }
+}
+
+.lactoSafe_LineDivider::before {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #e0e0e0;
+    margin: 0 1rem 0 0;
+}
+
+
+.lactoSafe_LineDivider::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #e0e0e0;
+    margin: 0 0 0  1rem;
 }

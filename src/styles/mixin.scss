@@ -31,3 +31,24 @@
     }
     
 }
+
+@mixin signInBackGround {
+     background-image: url('../asset/img/4.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 80vh;      
+    width:100%
+}
+@mixin signInFormBackground{
+    position: absolute;    
+    top: 25%;
+    left: 45%;
+    right: 15%;
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.35);
+    /* Black w/opacity/see-through */
+    color: white;
+    padding: 2rem 4rem;
+    border-radius: 10px;
+}

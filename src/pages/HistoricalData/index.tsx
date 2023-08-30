@@ -1,11 +1,19 @@
 import React from 'react'
+import LactoSafeTable from '../../component/Common/Table';
+import LactoSafeTab from '../../component/Common/Tabs';
+import styles from './historicalData.module.scss';
 
-const HistoricalData = () => {
+
+
+const tabList = ['item1','item2','item3'];
+
+const HistoricalData:React.FC = () => {
   return (
-    <div>
-      HistoricalData
+    <div className={styles.lactoSafe_HistoricalData_Container}>
+      <LactoSafeTab tabList={tabList}></LactoSafeTab>
+   
     </div>
   )
-}
+};
 
-export default HistoricalData
+export default HistoricalData;

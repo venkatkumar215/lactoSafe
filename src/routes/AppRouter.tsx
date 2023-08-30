@@ -10,6 +10,8 @@ import Packaging from "../pages/Packaging";
 import LogIn from "../pages/LogIn";
 import Footer from "../component/Footer";
 import styles from './app.module.scss'
+import SignUpForm from "../component/SignUpComponent/signUpForm/signUpForm";
+import SignUp from "../pages/SignUp";
 
 const AppRouter: React.FC = () => (
     <BrowserRouter basename="/">
@@ -22,7 +24,8 @@ const AppRouter: React.FC = () => (
                     <Route  path={AppRoutes.Processing}  element={<Processing />} />
                     <Route  path={AppRoutes.Transporting}  element={<Transporting />} />
                     <Route  path={AppRoutes.Packaging}  element={<Packaging />} />
-                    <Route path = {AppRoutes.LogIn}     element={<LogIn/>}/>                                                            
+                    <Route path = {AppRoutes.LogIn}     element={<LogIn/>}/>    
+                    <Route path = {AppRoutes.SignUp}     element={<SignUp/>}/>                                                         
                 </Routes>
             </div>
             <Footer/>

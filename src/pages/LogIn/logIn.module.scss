@@ -1,8 +1,6 @@
-.lactoSafe_logIn_Container{
-    // background-image: url('../../asset//img/process.jpg');
-    background-size:cover;
-    background-repeat: no-repeat;
-    height: 80vh;      
-    width:100%
-    
-}
+@import '../../styles/index.scss';
+
+.lactoSafe_logIn_Container {
+        
+        @include signInBackGround
+    }
